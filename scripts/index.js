@@ -9,6 +9,8 @@ function returnsPositiveNumbers(givenArray) {
     return newArray;
 }
 
+/////////////////////////////////////////////////////
+
 // Even Numbers
 
 function returnEvenNumbers(givenArray) {
@@ -20,7 +22,10 @@ function returnEvenNumbers(givenArray) {
     return newArray;
 }
 
+///////////////////////////////////////////////////////
+
 // Square the Numbers
+
 function squareTheNumbers(givenArray) {
     newArray = [];
     let squaredNumbers = givenArray.map(num => {
@@ -30,7 +35,10 @@ function squareTheNumbers(givenArray) {
     return newArray;
 }
 
+////////////////////////////////////////////////////////
+
 // Cities 1
+
 var cities = [
     { name: 'Los Angeles', temperature: 60.0},
     { name: 'Atlanta', temperature: 52.0 },
@@ -46,6 +54,8 @@ function nameColdCities(givenArray) {
     })
     return newArray;
 }
+
+//////////////////////////////////////////////////
 
 // Good job
 
@@ -71,8 +81,11 @@ var people = [
       console.log(`Good job, ${name}!`)
   });
 
+  /////////////////////////////////////////////////
+
 
 // 3 times
+
 function sayHello (words) {
     console.log("Hello, World!");
 }
@@ -82,14 +95,32 @@ function call3Times(fun) {
     fun(sayHello);
   }
 
+  ///////////////////////////////////////////////////
+
 // N Times
+
 function callNTimes (times, fun) {
     for (i = 0; i < times; i++)
         fun(sayHello);
 }
 
+///////////////////////////////////////////////////////
+
 // Str Multiply
+
 function strMultiply(str, times) {
-    for (var i = 0; i < times; i++) 
-        console.log(str);
+    let arr = "";
+    for (var i = 0; i < times; i++){
+        arr += str;
+    }
+    return arr;  
 }
+
+///////////////////////////////////////////////////////
+
+////////////// Bonus: Array Sorting //////////////////
+
+// Sort an array
+
+
+
