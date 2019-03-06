@@ -120,7 +120,50 @@ function strMultiply(str, times) {
 
 ////////////// Bonus: Array Sorting //////////////////
 
-// Sort an array
+// Sort An Array
+
+console.log(people.sort());
+
+///////////////////////////////////////////////////////
+
+// Sort An Array pt 2
+
+console.log(people.sort(function(a,b){
+    return a.length - b.length;
+}));
+
+// Sort An Array pt 3
+
+const products = [
+    { name: 'Basketball', price: 12.00 },
+    { name: 'Tennis Racquet', price: 66.00 },
+    { name: 'Tennis Balls', price: 9.00 },
+    { name: 'Tennis Balls', price: 9.00 }
+  ];
+
+  function compare(a,b) {
+      const priceA = a.price
+      const priceB = b.price 
+
+      let comparison = 0;
+      if (priceA > priceB) {
+          comparison = 1;
+      } else if (priceA < priceB) {
+          comparison = -1;
+      }
+      return comparison * -1;
+  }
+
+  console.log(products.sort(compare));
+  
+
+
+
+
+
+
+
+
 
 
 
